@@ -1,73 +1,69 @@
-Task 1: Exploring and Visualizing the Iris Dataset
-📌 Objective
+# Data Science & Analytics Internship Tasks
 
-The objective of this task is to understand how to read, summarize, and visualize a simple dataset using Python. The Iris dataset is used to perform basic data inspection and Exploratory Data Analysis (EDA) in order to gain insights into feature distributions and relationships between variables.
+## **Task 1: Exploring and Visualizing the Iris Dataset**
 
-📊 Dataset
+### **Objective**
+The objective of this task is to understand how to read, summarize, and visualize a simple dataset using Python. The Iris dataset is used to perform basic data inspection and Exploratory Data Analysis (EDA) in order to identify patterns and relationships between features.
 
-The dataset used for this task is the Iris Dataset, which contains measurements of iris flowers. The features include sepal length, sepal width, petal length, and petal width for three different species of iris flowers.
+### **Dataset**
+The dataset used in this task is the **Iris Dataset**, which contains measurements of iris flowers for three different species.
 
-Dataset Source:
+**Dataset Details:**
+- Number of Samples: 150
+- Features:
+  - Sepal Length
+  - Sepal Width
+  - Petal Length
+  - Petal Width
+- Target Variable:
+  - Species (Setosa, Versicolor, Virginica)
 
-Seaborn built-in dataset
+**Dataset Source:**
+- Seaborn built-in dataset  
+- CSV available from the UCI Machine Learning Repository  
 
-CSV file available from the UCI Machine Learning Repository
+### **Libraries Used**
+- Python  
+- Pandas  
+- Matplotlib  
+- Seaborn  
 
-🛠️ Libraries Used
+### **Task Workflow**
 
-Python
+#### **1. Data Loading**
+- The Iris dataset is loaded using the Pandas library.
+- The dataset is stored in a Pandas DataFrame for analysis.
 
-Pandas
+#### **2. Data Inspection**
+- `.shape` is used to check the number of rows and columns.
+- `.columns` is used to view feature names.
+- `.head()` is used to display the first few rows of the dataset.
 
-Matplotlib
+#### **3. Data Summarization**
+- `.describe()` is used to generate basic statistical information.
+- This helps in understanding the distribution and range of numerical features.
 
-Seaborn
-
-🔍 Task Workflow
-1. Data Loading
-
-The dataset is loaded using the Pandas library.
-
-The CSV file (or built-in Seaborn dataset) is read into a Pandas DataFrame for further analysis.
-
-2. Data Inspection
-
-The structure of the dataset is explored using the following functions:
-
-.shape to identify the number of rows and columns
-
-.columns to view the names of the features
-
-.head() to display the first few rows of the dataset
-
-3. Data Summarization
-
-Basic statistical information is obtained using .describe().
-
-This helps in understanding the range, mean, and distribution of the numerical features.
-
-4. Data Visualization
-
+#### **4. Data Visualization**
 The following visualizations are created using Matplotlib and Seaborn:
 
-Scatter Plots:
-Used to analyze relationships between different features (e.g., sepal length vs sepal width).
+- **Scatter Plots**  
+  Used to analyze relationships between different features.
 
-Histograms:
-Used to examine the distribution of numerical features and identify data spread or skewness.
+- **Histograms**  
+  Used to examine the distribution of numerical variables.
 
-Box Plots:
-Used to detect outliers and understand the spread of values through medians and quartiles.
+- **Box Plots**  
+  Used to identify outliers and understand data spread.
 
-5. Results and Observations
+- **Pair Plots**  
+  Used to visualize relationships between all features and species.
 
-The visualizations provide clear insights into feature relationships and distributions.
+### **Key Insights**
+- Petal length and petal width are strong indicators for species classification.
+- The Setosa species is clearly separable from the other two species.
+- Versicolor and Virginica show some overlap in their feature values.
 
-Certain features show distinct patterns that help differentiate between iris species.
+### **Files Included**
+- `Task1_Iris_EDA.ipynb`
 
-Overall, the dataset is well-structured and suitable for basic exploratory analysis.
-
-📁 Files Included
-
-Task1_Iris_EDA.ipynb
 

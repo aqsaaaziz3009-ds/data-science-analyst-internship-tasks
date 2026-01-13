@@ -1,44 +1,51 @@
-## Task 5: Personal Loan Acceptance Prediction
+## **Task 5: Personal Loan Acceptance Prediction**
 
-📌 Objective
+### **Objective**
 The objective of this task is to predict whether a bank customer will accept a personal loan offer based on their demographic and financial information.
 
-📊 Dataset
-Name: Bank Marketing Dataset (UCI Machine Learning Repository)
-Number of Samples: 4,521
+---
 
-Features:
-1.Age
-2.Job
-3.Marital Status
-4.Education
-5.Account Balance
-6.Housing Loan
-7.Personal Loan Status
-8.Contact Type
-9.Campaign Details
-10.Target Variable:
-11.Loan Acceptance (Yes / No)
+### **Dataset**
+The dataset used for this task is the **Bank Marketing Dataset** from the UCI Machine Learning Repository.
 
-🛠️ Tools & Libraries Used
-a.Python
-b.Pandas
-c.NumPy
-d.Matplotlib
-e.Seaborn
-d.Scikit-learn
+**Dataset Details:**
+- Features include age, job, marital status, education, balance, and campaign details.
+- Target Variable:
+  - Loan Acceptance (Yes / No)
 
-🔍 Steps Performed
--Loaded and explored the dataset
--Removed irrelevant features and handled categorical variables
--Applied feature scaling to improve model performance
--Trained a Logistic Regression classification model
--Evaluated the model using accuracy score and confusion matrix
+---
 
-📈 Key Insights
--Customers with higher account balance are more likely to accept a loan
--Contact and campaign-related features influence loan acceptance
--Logistic Regression performed effectively for this classification task
+### **Libraries Used**
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
 
-📁 Files Included
-Task5_Personal_Loan.ipynb
+---
+
+### **Task Workflow**
+
+#### **1. Data Preparation**
+- Dataset is loaded and unnecessary features are removed.
+- Categorical variables are encoded using one-hot encoding.
+- Feature scaling is applied to improve model performance.
+
+#### **2. Model Training**
+- Logistic Regression is used to build the classification model.
+
+#### **3. Model Evaluation**
+- Model accuracy is calculated.
+- Confusion matrix is used to analyze predictions.
+
+---
+
+### **Key Insights**
+- Customers with higher balances are more likely to accept loans.
+- Campaign-related features influence loan acceptance behavior.
+
+---
+
+### **Files Included**
+- `Task5_Personal_Loan.ipynb`

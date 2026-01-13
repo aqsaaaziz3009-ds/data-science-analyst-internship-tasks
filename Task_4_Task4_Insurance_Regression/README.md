@@ -1,67 +1,52 @@
-## Task 4: Predicting Insurance Claim Amounts
+## **Task 4: Predicting Insurance Claim Amounts**
 
-📌 Objective
-The objective of this task is to predict medical insurance claim amounts based on personal and health-related features using a regression model.
+### **Objective**
+The objective of this task is to predict medical insurance claim amounts based on personal and health-related attributes using a regression model.
 
-📊 Dataset
+---
 
-Name: Medical Cost Personal Dataset
-Number of Samples: 1,338
+### **Dataset**
+The dataset used for this task is the **Medical Cost Personal Dataset**.
 
-Features:
+**Dataset Details:**
+- Features include age, BMI, smoking status, number of children, and region.
+- Target Variable:
+  - Charges (Medical Insurance Cost)
 
-Age
+---
 
-Sex
+### **Libraries Used**
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
 
-BMI
+---
 
-Number of Children
+### **Task Workflow**
 
-Smoking Status
+#### **1. Data Loading and Cleaning**
+- Dataset is loaded and checked for missing values.
+- Categorical features are converted into numeric format.
 
-Region
+#### **2. Exploratory Data Analysis**
+- Visualized relationships between age, BMI, smoking status, and insurance charges.
 
-Target Variable:
+#### **3. Model Training**
+- A Linear Regression model is trained to predict insurance costs.
 
-Charges (Medical Insurance Cost)
+#### **4. Model Evaluation**
+- Model performance is evaluated using MAE and RMSE.
 
-🛠️ Tools & Libraries Used
+---
 
-Python
+### **Key Insights**
+- Smoking status has a strong impact on insurance charges.
+- Higher BMI and age are associated with higher medical costs.
 
-Pandas
+---
 
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-🔍 Steps Performed
-
-1.Loaded the dataset and explored its structure
-
-2.Checked for missing values and data types
-
-3.Converted categorical variables into numeric format
-
-4.Performed exploratory data analysis using scatter plots and box plots
-
-5.Trained a Linear Regression model
-
-6.Evaluated the model using MAE and RMSE
-
-📈 Key Insights
-
-1.Smoking status has a significant impact on insurance charges
-
-2.Higher BMI and age are associated with higher medical costs
-
-3.The regression model provides a reasonable estimation of insurance charges
-
-📁 Files Included
-
-Task4_Insurance_Regression.ipynb
+### **Files Included**
+- `Task4_Insurance_Regression.ipynb`

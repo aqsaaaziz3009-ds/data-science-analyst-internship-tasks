@@ -1,11 +1,11 @@
-Task 3: Customer Churn Prediction (Bank Customers)
+## **Task 3: Customer Churn Prediction (Bank Customers)**
 
-## Objective
-The objective of this task is to predict whether a bank customer is likely to leave the bank (churn) based on their personal and account-related information.
+### **Objective**
+The objective of this task is to identify bank customers who are likely to leave the bank by analyzing customer demographics and account-related information.
 
-## Dataset
-Churn Modelling Dataset
-
+---
+### **Dataset**
+The dataset used for this task is the **Churn Modelling Dataset**.
 The dataset contains customer information such as:
 - Credit score
 - Geography
@@ -18,40 +18,53 @@ The dataset contains customer information such as:
 - Whether the customer is an active member
 - Estimated salary
 
-The target variable is:
-- **Exited**
-  - 1 → Customer left the bank (Churn)
-  - 0 → Customer stayed with the bank
+**Dataset Details:**
+- Features include age, balance, tenure, number of products, and activity status.
+- Target Variable:
+  - Exited (1 = Customer left, 0 = Customer stayed)
 
-### Steps Performed ###
+---
 
-1. **Data Loading**
-   - Loaded the dataset using the pandas library.
+### **Libraries Used**
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
 
-2. **Data Exploration**
-   - Checked dataset shape, columns, and basic information.
-   - Analyzed the target variable distribution.
+---
 
-3. **Data Preprocessing**
-   - Removed unnecessary columns such as customer ID.
-   - Encoded categorical variables like Geography and Gender.
-   - Split the dataset into features (X) and target (y).
+### **Task Workflow**
 
-4. **Model Training**
-   - Trained a classification model to predict customer churn.
+#### **1. Data Preparation**
+- Dataset is loaded and unnecessary columns are removed.
+- Categorical variables such as gender and geography are encoded.
 
-5. **Model Evaluation**
-   - Evaluated the model using accuracy score.
-   - Used confusion matrix to analyze correct and incorrect predictions.
+#### **2. Data Analysis**
+- Customer behavior is analyzed through visualizations.
+- Churn distribution is examined.
 
-6. **Feature Importance Analysis**
-   - Analyzed which features contribute the most to customer churn.
-   - 
-### Results and Insights
-- Customers with higher age and lower account activity are more likely to churn.
-- Balance and number of products also play an important role in churn prediction.
-- The model provides useful insights for banks to identify at-risk customers.
+#### **3. Model Training**
+- A classification model is trained to predict churn.
 
+#### **4. Model Evaluation**
+- Performance is measured using accuracy and confusion matrix.
+- Feature importance is analyzed to identify key churn factors.
+
+---
+
+### **Key Insights**
+- Older customers and inactive users are more likely to churn.
+- Balance and number of products influence churn behavior.
+
+---
 ### Conclusion
 This task demonstrates how machine learning classification techniques can be used to predict customer churn. The insights gained from this analysis can help banks take preventive actions to retain customers and reduce churn.
+
+### **Files Included**
+- `Task3_Customer_Churn_Prediction.ipynb`
+
+
+
 
